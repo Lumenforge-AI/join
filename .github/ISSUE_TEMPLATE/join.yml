@@ -1,0 +1,28 @@
+name: Join request
+description: Request membership in Lumenforge AI
+title: "Join request: "
+labels: ["join"]
+body:
+  - type: input
+    id: username
+    attributes:
+      label: GitHub username
+      placeholder: your-username
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you want to join?
+      description: One or two sentences is enough.
+      placeholder: I want to follow the lab notes and help with small experiments.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Optional link
+      description: A project, profile, or interest.
+      placeholder: https://github.com/your-username
+    validations:
+      required: false
